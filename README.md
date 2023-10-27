@@ -20,19 +20,12 @@ Este é um exemplo de como criar um chatbot simples usando Node.js e a bibliotec
 3. Execute o chatbot com o seguinte comando:
 
    ```
-   node chatbot.js
+   npm start
    ```
 
 4. Use o aplicativo WhatsApp em seu telefone para escanear o código QR que aparecerá no terminal. Isso autenticará seu chatbot.
 
 ## Uso
 
-Após a autenticação, seu chatbot estará pronto para responder quando receber a mensagem "hello" no WhatsApp. Você pode personalizar as respostas e adicionar lógica adicional no arquivo `chatbot.js`.
+Após a autenticação, seu chatbot estará pronto para responder quando receber a mensagem "ola" no WhatsApp. Acesse no browser a url: localhost:3000/qrcode. No terminal do VSCode vai aparecer um QRCode. Autentique via whatsapp no celular.
 
-```javascript
-client.onMessage((message) => {
-  if (message.body.toLowerCase() === 'hello') {
-    client.sendText(message.from, 'Olá! Como posso ajudar?');
-  }
-});
-```
