@@ -1,12 +1,27 @@
 {
   "name": "whatsapp-chatbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este é um exemplo de como criar um chatbot simples usando Node.js e a biblioteca `venom-bot`. O chatbot irá responder com uma mensagem quando receber a palavra \"hello\" em uma mensagem do WhatsApp.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "venom-bot": "^5.0.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreFnicacio/BaseBotWhatsApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreFnicacio/BaseBotWhatsApp/issues"
+  },
+  "homepage": "https://github.com/andreFnicacio/BaseBotWhatsApp#readme"
 }
